@@ -1,0 +1,60 @@
+
+# ============================================
+# Movie Ticket Booking System
+# Git Ignore Configuration
+# ============================================
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local configuration containing credentials
+config/local.php
+config/secrets.php
+
+# Composer dependencies
+/vendor/
+
+# Node.js dependencies
+/node_modules/
+
+# Application logs
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+*.log
+
+# Generated private tickets
+/storage/tickets/*
+!/storage/tickets/.gitkeep
+
+# Runtime cache and temporary files
+/storage/cache/*
+!/storage/cache/.gitkeep
+
+*.tmp
+*.temp
+
+# PHPUnit test cache
+.phpunit.cache/
+.phpunit.result.cache
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local database exports and backups
+*.sql.gz
+*.sql.zip
+*.bak
+*.backup
+/backups/
